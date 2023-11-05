@@ -1,0 +1,13 @@
+nav {
+  display: flex;
+  justify-content: end;
+  margin-right: 4rem;
+  font-size: 3rem;
+  gap: 2rem;
+}
+
+h2 {
+  margin-right: auto;
+  margin-left: auto;
+  color: whitesmoke;
+}
