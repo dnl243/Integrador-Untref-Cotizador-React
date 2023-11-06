@@ -14,7 +14,7 @@ const Historial = () => {
       timer: 1900,
     });
     setTimeout(() => {
-      location.replace("/");
+      location.replace("/cotizador");
     }, 2000);
   };
   return (

@@ -50,7 +50,7 @@ label {
     font-size: xx-large;
 }
 
-tbody, thead {
+tbody, thead, h2 {
     text-align: center;
 }
 

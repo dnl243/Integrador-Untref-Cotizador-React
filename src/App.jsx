@@ -5,12 +5,13 @@ import HistorialContext from "./context/HistorialContext";
 import CotizadorContext from "./context/CotizadorContext";
 import { useState } from "react";
 import useLocalStorage from "./hooks/useLocalStorage";
+import Inicio from "./components/Inicio";
 
 const App = () => {
   const [elementos, setElementos] = useState({
-    propiedad:0,
-    ubicacion:0,
-    metros:20,
+    propiedad: 0,
+    ubicacion: 0,
+    metros: 20,
   });
   const [historial, setHistorial] = useLocalStorage("historial", []);
   return (
@@ -19,7 +20,8 @@ const App = () => {
         <CotizadorContext.Provider value={{ elementos, setElementos }}>
           <BrowserRouter>
             <Routes>
-              <Route path="/" index element={<Cotizador />}></Route>
+              <Route path="/" index element={<Inicio />}></Route>
+              <Route path="/cotizador" element={<Cotizador />}></Route>
               <Route path="/historial" element={<Historial />}></Route>
             </Routes>
           </BrowserRouter>

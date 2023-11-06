@@ -42,6 +42,7 @@ const Cotizador = () => {
       icon: 'success',
       text: 'Cotizacion guardada con éxito!',
     });
+    setPresupuesto(0);
   };
 
   useEffect(() => {

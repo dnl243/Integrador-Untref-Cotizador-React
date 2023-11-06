@@ -4,9 +4,11 @@ import "../styles/header.css";
 const Header = () => {
   return (
     <>
-      <nav>
+      <Link to="/">
         <h2>Seguros UNTREF</h2>
-        <Link to="/" title="Cotizador">
+      </Link>
+      <nav>
+        <Link to="/cotizador" title="Cotizador">
           🏡
         </Link>
         <Link to="/historial" title="Historial">
